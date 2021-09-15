@@ -19,6 +19,7 @@ const addImages = images.map((el) => {
   const imageEl = `<li><img src = "${el.url}" alt = "${el.alt}"  width = "250" height = "150"  /></li>`;
   return imageEl;
 });
-galleryList.insertAdjacentHTML("afterbegin", addImages);
+galleryList.insertAdjacentHTML("afterbegin", addImages.join(" "));
 // galleryList.style.display = "flex";
 // galleryList.setAttribute("style", "display: flex; list-style-type: none;");
+// galleryList.classList.add()
