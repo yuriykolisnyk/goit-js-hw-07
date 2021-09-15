@@ -5,7 +5,7 @@ navEl.forEach((num) =>
   console.log(
     "Категория:",
     num.firstElementChild.textContent,
-    ";",
+    "\n",
     "Количество элементов:",
     num.lastElementChild.children.length
   )

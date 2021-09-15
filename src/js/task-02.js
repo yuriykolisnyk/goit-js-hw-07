@@ -7,6 +7,10 @@ const ingredients = [
   "Приправы",
 ];
 
-const ingredientsEl = document.createElement("li");
-// ingredientsEl.textContent("Картошка");
-console.log(ingredientsEl);
+const ulEl = document.getElementById("ingredients");
+
+ingredients.forEach((ingredient) => {
+  let liItems = document.createElement("li");
+  liItems.innerHTML = ingredient;
+  ulEl.appendChild(liItems);
+});
