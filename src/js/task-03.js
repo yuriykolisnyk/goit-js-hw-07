@@ -13,7 +13,7 @@ const images = [
   },
 ];
 
-const galleryListEl = document.getElementById("gallery");
+const galleryListEl = document.querySelector("#gallery");
 
 const addImagesEl = images.map((item) => {
   const imageEl = `<li><img src = "${item.url}" alt = "${item.alt}"  width = "250" height = "150"  /></li>`;
