@@ -13,13 +13,13 @@ const images = [
   },
 ];
 
-const galleryList = document.getElementById("gallery");
+const galleryListEl = document.getElementById("gallery");
 
-const addImages = images.map((el) => {
-  const imageEl = `<li><img src = "${el.url}" alt = "${el.alt}"  width = "250" height = "150"  /></li>`;
+const addImagesEl = images.map((item) => {
+  const imageEl = `<li><img src = "${item.url}" alt = "${item.alt}"  width = "250" height = "150"  /></li>`;
   return imageEl;
 });
-galleryList.insertAdjacentHTML("afterbegin", addImages.join(" "));
+galleryListEl.insertAdjacentHTML("afterbegin", addImagesEl.join(" "));
 // galleryList.style.display = "flex";
 // galleryList.setAttribute("style", "display: flex; list-style-type: none;");
 // galleryList.classList.add()

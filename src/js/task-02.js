@@ -7,11 +7,11 @@ const ingredients = [
   "Приправы",
 ];
 
-const ulList = document.getElementById("ingredients");
+const ulListEl = document.getElementById("ingredients");
 
-const addLi = ingredients.map((ingredient) => {
+const addLiEl = ingredients.map((ingredient) => {
   let liItems = document.createElement("li");
   liItems.textContent = ingredient;
   return liItems;
 });
-ulList.append(...addLi);
+ulListEl.append(...addLiEl);

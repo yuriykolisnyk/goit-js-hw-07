@@ -1,12 +1,12 @@
-const navEl = document.querySelectorAll(".item");
-console.log(`В списке ${navEl.length} категории.`);
+const allCategoriesEl = document.querySelectorAll(".item");
+console.log(`В списке ${allCategoriesEl.length} категории.`);
 
-navEl.forEach((num) =>
+allCategoriesEl.forEach((item) =>
   console.log(
     "Категория:",
-    num.firstElementChild.textContent,
+    item.firstElementChild.textContent,
     "\n",
     "Количество элементов:",
-    num.lastElementChild.children.length
+    item.lastElementChild.children.length
   )
 );
