@@ -1,13 +1,13 @@
-const inputEl = document.querySelector("#validation-input");
+const validatorInputEl = document.querySelector("#validation-input");
 
-const validationCheck = (event) => {
-  if (event.target.value.length === Number(inputEl.dataset.length)) {
-    inputEl.classList = null;
-    inputEl.classList.add("valid");
+const validationCheckEl = (event) => {
+  if (event.target.value.length === Number(validatorInputEl.dataset.length)) {
+    validatorInputEl.classList = null;
+    validatorInputEl.classList.add("valid");
   } else {
-    inputEl.classList = null;
-    inputEl.classList.add("invalid");
+    validatorInputEl.classList = null;
+    validatorInputEl.classList.add("invalid");
   }
 };
 
-inputEl.addEventListener("change", validationCheck);
+validatorInputEl.addEventListener("change", validationCheckEl);
